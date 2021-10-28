@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0;">
+        <h1>
+            Welcome to my first Bootstrap Page!
+        </h1>
+        <p>
+            Created by Nazar Trut
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactME.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="row py-5 pl-5 pr-5">
+
+        <div class="col-md-4 bg-light border">
+            <h3>
+                Get your daily inspirational quote!
+            </h3>
+
+            <button type="button" class="btn btn-outline-success" onclick="setInspirationalQuote()">Get Quote</button>
+            
+            <p id="inspirationalquote" style="margin-top: 20px;"></p>
+
+        </div>
+
+        <div class="col-md-4 bg-light border">
+            <h3>
+                Get your daily jokes!
+            </h3>
+
+            <button type="button" class="btn btn-outline-success" onclick="setJokes()">Get Quote</button>
+
+            <p id="quote" style="margin-top: 20px;"></p>
+        </div>
+
+        <div class="col-md-4 bg-light border">
+            <h3>
+                Random cat pictures!
+            </h3>
+
+            <button type="button" class="btn btn-outline-success" onclick="getCatPicture()">Get Quote</button>
+            <br>
+            <img id="pic" class="img-fluid" style="margin-top: 20px; margin-bottom: 20px; max-height: 300px;">
+            
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="script.js">
+
+</script>
+
+</html>
